@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BagAndBall/BagAndBall.iml" filepath="$PROJECT_DIR$/BagAndBall/BagAndBall.iml" />
       <module fileurl="file://$PROJECT_DIR$/Conversion/Conversion.iml" filepath="$PROJECT_DIR$/Conversion/Conversion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StockExchange/StockExchange.iml" filepath="$PROJECT_DIR$/StockExchange/StockExchange.iml" />
       <module fileurl="file://$PROJECT_DIR$/Vikas.iml" filepath="$PROJECT_DIR$/Vikas.iml" />
     </modules>
   </component>

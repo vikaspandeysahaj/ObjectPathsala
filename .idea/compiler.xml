@@ -24,6 +24,7 @@
         <processorPath useClasspath="true" />
         <module name="BagAndBall" />
         <module name="Conversion" />
+        <module name="StockExchange" />
       </profile>
     </annotationProcessing>
   </component>
