@@ -1,19 +1,50 @@
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by vikas on 09/06/15.
- */
+
 public class Exchange implements Publisher {
 
-    List<Subscriber> subscribers = new ArrayList<Subscriber>();
+    private static Exchange exchange;
+    private List<Subscriber> subscribers = new ArrayList<Subscriber>();
+    private List<Stock> stocks = new ArrayList<Stock>();
 
-    public void changeInPrice(Stock stock, double price){
+    private Exchange(){
 
     }
 
-    @Override
-    public void notifySubscribers() {
+    public static Exchange getExchange(){
+        if(exchange == null){
+            exchange = new Exchange();
+        }
+        return exchange;
+    }
 
+    @Override
+    public void registerClient(Subscriber subscriber) {
+        subscribers.add(subscriber);
+    }
+
+    @Override
+    public void unregisterClient(Subscriber subscriber) {
+        subscribers.remove(subscriber);
+    }
+
+    @Override
+    public void registerStock(Stock stock) {
+        stocks.add(stock);
+    }
+
+    @Override
+    public void unregisterStock(Stock stock) {
+        stocks.remove(stock);
+    }
+
+    @Override
+    public void notifySubscribers(Stock stock) {
+        for(Subscriber subscriber : subscribers){
+            if(subscriber.getStocks().contains(stock)){
+                subscriber.notification(stock);
+            }
+        }
     }
 }

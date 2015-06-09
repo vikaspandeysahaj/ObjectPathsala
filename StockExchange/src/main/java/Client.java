@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -5,22 +6,33 @@ import java.util.List;
  */
 public class Client implements Subscriber {
 
-    private List<Stock> stocks;
+    private List<Stock> stocks = new ArrayList<Stock>();
     private String name;
 
-
-    @Override
-    public void register(Stock stock) {
+    public Client addStock(Stock stock) {
         this.stocks.add(stock);
+        return this;
     }
 
-    @Override
-    public void unregister(Stock stock) {
+    public void removeStock(Stock stock) {
         this.stocks.remove(stock);
     }
 
     @Override
-    public void notification() {
+    public List<Stock> getStocks(){
+        return stocks;
+    }
 
+    @Override
+    public void notification(Stock stock) {
+        System.out.println(stock.getName() +" Stock price is changed for client "+ this.getName());
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

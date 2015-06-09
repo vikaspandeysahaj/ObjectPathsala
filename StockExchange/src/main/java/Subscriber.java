@@ -1,6 +1,6 @@
+import java.util.List;
 
 public interface Subscriber {
-    public void register(Stock stock);
-    public void unregister(Stock stock);
-    public void notification();
+    public void notification(Stock stock);
+    public List<Stock> getStocks();
 }
