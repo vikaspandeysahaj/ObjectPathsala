@@ -5,7 +5,10 @@
       <module fileurl="file://$PROJECT_DIR$/BagAndBall/BagAndBall.iml" filepath="$PROJECT_DIR$/BagAndBall/BagAndBall.iml" />
       <module fileurl="file://$PROJECT_DIR$/Conversion/Conversion.iml" filepath="$PROJECT_DIR$/Conversion/Conversion.iml" />
       <module fileurl="file://$PROJECT_DIR$/StockExchange/StockExchange.iml" filepath="$PROJECT_DIR$/StockExchange/StockExchange.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Testing/com.Testing.iml" filepath="$PROJECT_DIR$/Testing/com.Testing.iml" />
       <module fileurl="file://$PROJECT_DIR$/Vikas.iml" filepath="$PROJECT_DIR$/Vikas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Testing/src/main/main.iml" filepath="$PROJECT_DIR$/Testing/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Testing/src/test/test.iml" filepath="$PROJECT_DIR$/Testing/src/test/test.iml" />
     </modules>
   </component>
 </project>

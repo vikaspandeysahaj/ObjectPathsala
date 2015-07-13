@@ -22,10 +22,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="BagAndBall" />
-        <module name="com.Testing" />
-        <module name="Conversion" />
-        <module name="StockExchange" />
+        <module name="Testing" />
       </profile>
     </annotationProcessing>
   </component>
